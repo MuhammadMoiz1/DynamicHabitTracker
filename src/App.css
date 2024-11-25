@@ -1,38 +1,137 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
 .App {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header */
+.header {
+  margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #ff9800;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header p {
+  color: #b0b0b0;
+  margin: 10px 0;
+}
+
+/* Input Section */
+.input-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  width: 250px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  outline: none;
+}
+
+.input-section button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff9800;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.input-section button:hover {
+  background-color: #ffb74d;
+}
+
+/* Habit List */
+.habit-list {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.no-habits {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+}
+
+/* Habit Card */
+.habit-card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.habit-card h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.habit-card p {
+  color: #ff9800;
+  margin: 10px 0;
+}
+
+.buttons {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Buttons */
+button {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.completed {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+.not-completed {
+  background-color: #757575;
+  color: #ffffff;
+}
+
+.completed:hover {
+  background-color: #66bb6a;
+}
+
+.not-completed:hover {
+  background-color: #9e9e9e;
+}
+
+.reset {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+.reset:hover {
+  background-color: #ef5350;
 }
